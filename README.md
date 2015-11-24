@@ -17,3 +17,12 @@ I'm going to write some tips for success here for things you can do when you get
   - Yellow warnings won't crash your app but be careful to not ignore them.
   - Many times you will receive a Yellow warning in the middle of writing out a few lines of code because all the lines need to be written to be a successful passage of code. As you code more you will know when it's okay to run the Yellow light and ignore the warning. But in the beginning, heed all Yellow warnings because the more you understand the messages Xcode provides for you, the better coder you will become since so much of coding is about solving issues with your code, the more you know how Xcode communicates to you, the better.
   - Red "Errors" will crash your app. These need to be address prior to running your app. Again, listen to Xcode and if you do not understand these warnings or errors, see #1 above this.
+
+3: The power of the Print Statement!
+  - Many times you will code and receive no errors at all BUT you're app won't make sense. A label won't change to what you expected, a color won't be what you thought you set it to, etc etc etc.
+  - In times like this, we can use print statements to find some extra clues as to issues in our code.
+  - You can write a line of code that will print something out in the bottom console area of your Xcode screen like this...
+  - print("This string will print in the colsole window when my app gets to this part of the code and runs this line"
+  - print statements can be used with tokens to print out a value of something as well for example...
+  - print("The exampleTextLabel should display the string: %@", exampleTextLabel.text)
+  - The %@ is a token that will print out strings. There are other tokens for numbers, etc... and Xcode will help make sure you choose the correct one for what you want to print out.
