@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="627"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="g3Z-hc-2XA">
             <objects>
-                <viewController id="f8a-U6-B8a" sceneMemberID="viewController">
+                <viewController id="f8a-U6-B8a" customClass="ColorViewController" customModule="Colorific" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nUa-C8-aWX"/>
                         <viewControllerLayoutGuide type="bottom" id="Rna-Wk-5yU"/>
