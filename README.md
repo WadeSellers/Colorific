@@ -2,6 +2,8 @@
 
 Swift: This app was mainly used as a test app to hit different spots where the app broke and I needed to learn how to debug the error properly
 
+![colors animated](http://cdn.makeagif.com/media/11-24-2015/WhM8be.gif)
+
 I'm going to write some tips for success here for things you can do when you get an error when developing.
 
 1: You're not alone!
