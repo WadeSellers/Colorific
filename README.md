@@ -26,3 +26,9 @@ I'm going to write some tips for success here for things you can do when you get
   - print statements can be used with tokens to print out a value of something as well for example...
   - print("The exampleTextLabel should display the string: %@", exampleTextLabel.text)
   - The %@ is a token that will print out strings. There are other tokens for numbers, etc... and Xcode will help make sure you choose the correct one for what you want to print out.
+
+4: Pause it with a BreakPoint!
+  - Sometimes the Print Statement isn't enough. Sometimes you want to break the apps operation down into its smallest of steps and walk through the run of the app line of code by line of code, etc.
+  - BreakPoints can do this for us. We can set a breakpoint (google: ios how to set a breakpoint) and when our app reached the line of code we set a breakpoint at, Xcode will pause the run of the app and allow us to use several options to move the app forward. We can stop the at the breakpoint and use a PO Statement in our console log to check a value of something. (google: ios how to write a po statement in console) and then we could hit the play button afterwards to keep the app moving forward as it would normally.
+  - We can also use a step over or step through option (google: ios difference between step over and step through) to walk our app along 1 line at a time.
+  - This can help us debug at a micro level and find the error or crux spot in our app that needs to be figured out.
