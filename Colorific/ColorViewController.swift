@@ -19,17 +19,17 @@ class ColorViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         if self.view.backgroundColor == UIColor.redColor() {
-            self.colorLabel.text = "RED!"
+            self.colorLabel.text = "ROJO!"
         } else if self.view.backgroundColor == UIColor.blueColor() {
-            self.colorLabel.text = "BLUE!"
+            self.colorLabel.text = "AZUL!"
         } else if self.view.backgroundColor == UIColor.greenColor() {
-            self.colorLabel.text = "GREEN!"
+            self.colorLabel.text = "VERDE!"
         } else if self.view.backgroundColor == UIColor.purpleColor() {
-            self.colorLabel.text = "PURPLE!"
+            self.colorLabel.text = "MORADO!"
         } else if self.view.backgroundColor == UIColor(red: 255/255, green: 0/255, blue: 128/255, alpha: 1.0) {
-            self.colorLabel.text = "PINK!"
+            self.colorLabel.text = "ROSA!"
         } else if self.view.backgroundColor == UIColor.yellowColor() {
-            self.colorLabel.text = "YELLOW!"
+            self.colorLabel.text = "AMARILLO!"
         }
     }
 
