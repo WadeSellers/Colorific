@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
 
     let colors : [UIColor] = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.purpleColor(), UIColor(red: 255/255, green: 0/255, blue: 128/255, alpha: 1.0), UIColor.blackColor()]
+
+    var selectedColor : UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,9 +40,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        self.selectedColor = self.colors[indexPath.row]
+
         self.performSegueWithIdentifier("toColorScreen", sender: self)
 
         print("Table Row Selected")
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toColorScreen" {
+            segue.destinationViewController.view.backgroundColor = self.selectedColor
+        }
     }
 
 }
